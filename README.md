@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/d-g-ivanov/tableFilthor">
-    <img src="https://github.com/d-g-ivanov/learn-react/blob/main/img/cvlize.png" alt="Learn React Logo" width="126">
+    <img src="https://github.com/d-g-ivanov/cvlize/blob/main/img/cvlize.png" alt="Learn React Logo" width="126">
   </a>
 
   <h3 align="center">CVlize / Browsermé</h3>
