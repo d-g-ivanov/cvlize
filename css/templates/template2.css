@@ -1,0 +1,152 @@
+.workArea {
+	font-family: sans-serif;
+}
+
+/* aside */
+aside {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: auto;
+	background: rgb(230,230,230);
+	padding: 60pt 0 20pt;
+}
+
+	div.A4.portrait aside {
+			min-height: 59.3mm;
+		}
+
+		div.A4.landscape aside {
+			min-height: 42mm;
+		}
+		
+		div.Letter.portrait aside {
+			min-height: 55.8mm;
+		}
+
+		div.Letter.landscape aside {
+			min-height: 43.3mm;
+		}
+		
+		div.Legal.portrait aside {
+			min-height: 71.1mm;
+		}
+
+		div.Legal.landscape aside {
+			min-height: 43.2mm;
+		}
+
+aside > div {
+	width: calc(100% - 120pt);
+	margin: 0 auto;
+}
+		
+.nameSection h1 {
+	color: #770704;
+	font-weight: bolder;
+	font-size: 20pt;
+}
+
+.contactInfo li {
+	display: inline-block;
+	font-weight: 600;
+}
+
+	.contactInfo li:after, #mySkills li:after {
+		position: relative;
+		content: '|';
+		padding: 0 7pt;
+		color: #770704;
+		font-weight: 600;
+	}
+
+.contactInfo li:last-of-type:after, #mySkills li:last-of-type:after {
+	content: '';
+}
+
+#aboutMe {
+	color: #888;
+	padding-top: 30pt;
+	font-style: italic;
+}
+
+/* main */
+main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 15pt 0 14mm;
+}
+
+main .mainWrapper {
+	width: 100%;
+	padding: 0 30pt 0 60pt;
+}
+
+.headline {
+	margin-top: 15pt;
+}
+
+main h2 {
+	color: #770704;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+main section:not(#mySkills):not(.headline) {
+	border-spacing: 0 10pt;
+	margin: 5pt 0;
+	padding: 10pt 5pt;
+	border-left: 1px solid #770704;
+	
+	position: relative;
+	left: -7pt;
+}
+
+main section div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+main section div:first-child, main section div:nth-child(2) {
+	margin-bottom: 8pt;
+}
+
+main section > div:nth-child(odd) {
+	width:30%;
+}
+
+main section > div:nth-child(even) {
+	width: 65%;
+	margin-left: 15pt;
+}
+
+.degree, .occupation {
+	color: #770704;
+	font-weight: bolder;
+}
+
+#mySkills ul {
+	padding: 10pt 0 5pt 5pt;
+	border-left: 1px solid #770704;
+	
+	position: relative;
+	left: -7pt;
+}
+
+#mySkills li {
+	float: left;
+	margin-bottom: 5pt;
+}
+
+#mySkills .headline#forSkills {
+	width:100%;
+}
+
+
+
+
+
+
+
+

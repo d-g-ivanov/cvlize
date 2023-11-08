@@ -1,0 +1,151 @@
+.workArea {
+	font-family: sans-serif;
+}
+
+#formContent form {
+	width: 3000px;
+}
+
+/* aside */
+aside {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: auto;
+	padding-top: 60pt;
+}
+
+aside > div {
+	width: 65%;
+	margin-left: 35%;
+	padding-right: 10mm
+}
+		
+.nameSection h1 {
+	color: rgb(155,155,155);
+	font-weight: bolder;
+	font-size: 35pt;
+}
+
+.contactInfo li {
+	color: #770704;
+}
+
+/* main */
+main {
+	position: relative;
+	width: 100%;
+	padding-bottom: 15mm;
+}
+
+.clonedPage main.noAside {
+	padding-top: 15mm;
+}
+
+/*main .mainWrapper {
+	width: 100%;
+	overflow: hidden;
+}*/
+
+main section {
+	padding-right: 10mm;
+	vertical-align: top;
+}
+
+main section:not(.headline) {
+	width: 65%;
+	margin-left: 35%;
+}
+
+main section.headline {
+	width: 35%;
+	display: inline-block;
+	
+	text-align: right;
+	font-size: 20pt;
+	text-transform: uppercase;
+	
+	color: rgb(155,155,155);
+		
+	padding-right: 5mm;
+	padding-left: 10mm;
+	margin-top: 5mm;
+}
+
+.myExperience, .myLearning, #mySkills, #myOthers {
+	margin-top: -15pt;
+}
+
+.myExperience:not([style*="display:none"]):not([style*="display: none"]) ~ .myExperience, .myLearning:not([style*="display:none"]):not([style*="display: none"]) ~ .myLearning, .mainWrapper .myLearning:first-child, .mainWrapper .myExperience:first-child {
+	margin-top: 5mm;
+	border-top: 0;
+	padding-top: 0;
+}
+
+.myLearning, #mySkills, #myOthers {
+	position: relative;
+	margin-top: -15pt;
+	/*border-top: 1px solid #770704;
+	padding-top: 10pt;*/
+}
+
+.myLearning:before, #mySkills:before, #myOthers:before {
+	content: '';
+	position: absolute;
+	top: -12pt;
+	left: 0;
+	width: calc(100% - 10mm);
+	height: 1px;
+	background: #770704;
+}
+
+.myLearning ~ .myLearning:before, .mainWrapper .myLearning:first-child:before {
+	height: 0;
+	background: none;	
+}
+
+#aboutMe {
+	width: 100%;
+	margin-left: 0;
+	padding: 5mm 10mm 0 22mm;
+}
+
+.degree, .occupation, .sentOne {
+	color: #770704;
+	font-weight: bold;
+	margin-bottom: 5pt;
+}
+
+.datesWork, .datesEdu, .employer, .institution, p {
+	color: rgb(155,155,155);
+}
+
+.myExperience:first-of-type {
+	margin-top: 0;
+}
+
+.datesWork, .datesEdu, .employer, .institution {
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+}
+
+.datesWork, .datesEdu {
+	text-align: right;
+}
+
+#mySkills li {
+	display: inline-block;
+	vertical-align: top;
+}
+	#mySkills li:not(:last-child):after {
+		content: '|';
+		color: #770704;
+		margin: 0 5pt;
+	}
+
+#myOthers li:before {
+	content: '\2022 ';
+	color: #770704;
+	margin-right: 5pt;
+}

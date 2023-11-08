@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+	<title>Template EuroPass | CVlize</title>
+
+	<meta name="robots" content="noindex">
+	
+	<link rel='shortcut icon' href='../favicon/cvlize2.ico' type='image/x-icon' />
+	<link rel="stylesheet" href="../css/helpers/reset.css" type="text/css" />
+	<link rel="stylesheet" href="../css/helpers/perfect-scrollbar.css" type="text/css" />
+	<link rel="stylesheet" href="../css/templates/!general.css" type="text/css" />
+	<!-- <link rel="stylesheet" href="../css/templates/EuroPass.css" type="text/css" /> -->
+	
+	<style type="text/css">
+	:after,:before,aside div{color:#1593cb}aside,aside img{width:100%}main section>div,table,tr{position:relative}.workArea{font-family:sans-serif}#formContent form{width:5500px}#globalTemplating li:not(.special) label{padding:5px}#myForm li:not(.special){margin:0}#myDigitalCompForm ul,#myLanguagesForm ul{z-index:10;position:relative;top:-2.2em}aside{padding:15mm 10mm 5mm 15mm;display:table;font-size:10pt}aside div{display:table-cell;vertical-align:middle}aside div:first-child{width:20%;padding-right:5%;height:10pt}aside div:nth-child(2){width:30%;padding-right:5%;text-align:right}aside div.mynames{width:50%;text-align:right}main,main section{width:100%}main{height:calc(100% - (29mm+10pt));padding:0 10mm 15mm 15mm}main.noAside{padding-top:15mm}main section:not(.headline){margin-bottom:12pt}main section>div{display:inline-block;vertical-align:top}main section>div:first-child{width:27.5%;margin-right:1.5%;text-align:right}main section h2{color:#0e4194;text-transform:uppercase;font-size:11pt;margin-bottom:10pt}main section>div:nth-child(2){width:70%}.headline>div{vertical-align:baseline}.headline>div:nth-child(2){height:11pt;border-bottom:1px solid #1593cb;border-right:10px solid #1593cb}#personalInfo>div:first-child div{width:70%;margin:0 0 0 30%;text-align:right}#personalInfo>div:first-child div img{width:100%}#personalInfo>div:nth-child(2) h3{margin-bottom:10pt;font-weight:700}#personalInfo>div:nth-child(2) li{margin-bottom:6pt}.moredetails li{float:left}.moredetails li:after{content:'|';margin:0 5pt}.moredetails li:last-child:after{content:''}.moredetails li:before{margin-right:5pt;display:inline-block;font-size:10pt}li.mygender:before{content:'Sex'}li.mybirth:before{content:'Date of birth'}li.mynationality:before{content:'Nationality'}.details li:before{content:"";display:block;width:20px;height:20px;float:left;margin:0 6px 0 0}li.myaddress:before{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAsCAYAAAF+ofpeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAKvgAACr4AZHWQ4EAAAN+SURBVEhLxZfLa1NBFMa7FCmoiCAoiIq60Y2iO1du/Ad058KFiCsXQt24MwHFTbUItaArEbFgoShEKZhVwepGuwnS1BZCS6qJxObRpDTxfMmZODP33LmTV/uDD9qZ87qTmXPvDIVyYOxLQ4mHWoPAmIgnlp4GLIE4SN67+E8HyrXtni/Wmv+o7M1BELAEn9OFcWNA8WJ2NTgI9DBQMpU3DdNrpfakQndgsxb6hC6eNrGN6vX6bZ4KooyIfTzUBXo6JZ5qceXlj4CBEpuYUQDWLNQIEUGlthU0ws+iBm2xSYtIAyBF4ykT3YBW/SoPm6idhwfgIZnQNBKVSuPYk2SmnR4amV58NZcuTFApx9nMje4cpTdfs+HVSQ7Q+++/G3enf4pz4lHST4kSMtvYNhCHMJEMkRmoX8bW3GJBDkYLe0ZyCFNot1BQEcOSo63IQAqq8LAUQCnQlnyQAmHteLpzbk4utANRxSd5uHu812dbwP7RHxF6Prs6Ra1rkk2iwdHRA0iKbCkAayM5h4ndglSqWw8lB5ewDOxuEv+wLDpg3PXo7G4iGc5n1puHXCHZsLuJZGgjVY/WxSH+YxtBeIPpSDbsbpJM5e5LxjiLwH4fKLG7CZ27a5KxS853QCyxLFYXJnaToeouSU6SvA5/LLE0KjnbYnM3VN1RyVkXNjGxm13cvPv2a0wKokQJL7BpNJT1oBQEEjdpFOm14pQUjKo6yyadYQcq1erneapzyuX6ERUI3xqExwXBgTrc9HgzPNQ9FOQUtgL/O3ioSz/ArwxVNjcv03Ls4anBkytWRzt93yjhZQbf3HrtLa3adQ7ZG90W45JXvwnjUyoXk4L2U3j1cTo/9IvXoMUp/ZACSMLewYa3wZeYZC/J62MKIJEUwBY3IydIKvna8urbvoVhA0cR9n1ma+XPRnRhdJxvhV0DbbmKC/vAsQU7Th0N9awZKYhLeBjfB1Ly3l86C9lSXArWT3V9lUtni+NSwH6op/sloOKeSYF7EYfunZX8Rsd7ThL2FFaKDtghDt07+WL1o5TMVyiqXKtfpAO7l0P2D/q8eeTbNHXhIopvMSpqcJ9DFHy4k7aAJktFvSad5hCDg5Lc82mguOSR7R3SfnYdPJTshuvajxc52Zxg8+0FG3k+8/exXRRP7zzUTiZQkNYORnhq5ynVGueK1S5vigGGhv4BTdrjE4oRESoAAAAASUVORK5CYII=) no-repeat;background-size:80% 80%}li.myhomephone:before{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAArCAYAAAF5mCpoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAALqgAAC6oAdSlmu0AAALhSURBVEhL1ZdLSxxBEMf3S/gxcs0nEPPwpuSaQyBnD55yCAQvXryEHAMaMQH1opIEgqBeRMgLEiQPH9kYlcUHRtRNiIHsOv+1era3pnq6e3rY2fzgD+5UdXVZ3TNdXUql69HbOv3Zir8BwKhEj5r8rP6VDTHiUOMQ0fBwaTfOIOHQO/61+eDu9KbsJWEMKbG8cdxwvP5Em84Gj/7i46FfWjyAO04jx1Yq8RTD89tm5zflk9jRWgHlSD/NODsC76jXxpp5GguvnLlGFnaSA3qiiNwRz8icZGCmbHZ6vHxZfBjxGtHjbHw7+NWSllJQYH17cJFLNqSAwSXgAelxODzw50o1n+B8P3WPenxb0lAfK675T0eNCbpHvyRs2EGNwTZMwdNEQ93ABNKrpotc/1fUvzc4V67XarWb9Dg7vD74uJApG6YFiLLtIhd/pIAQmbMhBYTInA0pIOT8lkhINfXqJyRwUukB0QKRKTu/z/8t6kGDs1TwEtDjMKbf7bcExSRkCkMPCuVS2/dbpy1BIXS4ZM7OjWiReGB0IGSOwY7xOm2x+jywarul00CaVAQHHh9sEw1NRzrg0oT+loamM/TqhxhA0urumXuNwa2n62IgpaDthxaYBww+JYI5qp4vPHu9V4cqx39wvFwhU2eAmuMmwUsH4b0IbltDuf9yS0yOq39irbhEsbxSUibhqxJthas0vH2kXXkk3Z7cKKaqsx+Sr3OacCbiBaPh7QMdEw4LKSlJd6YKqijAckpJ6YJPIZXUWd05eyAlp4SWiFyL597z72KSSh2TbPTJ6ZOaHV3onsi9eGzJoiUk1+LBCSQlqYRjNpdGOA9cGj20rx2RMD5Hri0vmkwalkC6QeB7jN4x10YH/YBr84+TC0mgWbXtd67BOcebiA0k7Du5r7D/abpwsCVsL1yIUBCaKj/QK2B/YsmlSX2Vy33dBfSruPX63jvblqANbBdcgrGs6IEh+xKXShfpIOR96voZDAAAAABJRU5ErkJggg==) no-repeat;background-size:80% 80%}li.mymobile:before{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAuCAYAAAHLiaCiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAMeoAADHqAdKWFGcAAAK4SURBVFhH7Zi9bxNBEMVdUCNRoEBLQUvFP0BDS0NPBSUlLQ0NBQVIFClS0QS6CBB0qShIKmgQOkBIIcQWcYQci1xjs895kxtfZvdu7yPYwT/pyXezM7O7471brzuFnH+yMX714df449ZgTNOhkZdT15MbLZqzBmA2iGgO8ODt98mIIJoOQQMvp/HmRwT0pTecbvBGaIKNGp0tL7pMgwZrNoUB8gkwqWCAT3Q5jpRL6/3X3/6AKND1aDS6yls/u4P0PpxlEZiLQdATy4suGZYRmZtx9okuGTAK4hTMLJRy9okuGZaTiC4ZP/p/Hlnrw3GJLv8IKYY57Kqsbuy81PUoo5vPPpcbgASgfjR5iZ7d/CdHHdGBdIR7ucbnvbVv4zsvksk1xPAw4hwrhoexAsuI4WHEGdOXlwCQcgB8Yj+Irvnzze5RQFmVXufziyw5lIemZtB1pKk++luHcO+T24GvMyyMTlhWaTq6wnCb9U99M7BIeNyZwgZTE2eagujkNNksEh9xIoljxRQ2OrG1k+BTdhKxiZjCRicG+XcxEB8gvhBT2JxIKcB8jThWTGHTWilae7u5QZyzAovE8GIwXZShSNgP3Q6y5AZ0hqH/Idv9g5XH61uTiqByriJ3XUUusHn28C1MN/DLdJk9fM8/m2eH1c2d19ZAmxLOO27JLbtv6yy7rM7uII0+2NZRI7+graUgp8S60idJLXZdHWvQ6JDNtWjt2VgMOsdi0BorMV5P+O8hVklv/2nSHS4n3f21pDd8s/Lu57HcELuujq8abYpdV8e3PARci12wbDoPqp63abHr6pyaSuvNRQ6NUMimNxI8E3mbFruuzmJ5lBS7rs6pqfTMr+n+IH1oJW5L2HDYdT3cD/NrVf5IjxGqvr13gCPbRXbbDG4Z3nK67RIv0dQILueNuBNLp/MXtq0Klmn5vL8AAAAASUVORK5CYII=) no-repeat;background-size:80% 80%}li.myemail:before{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA4CAYAAAEjlCBCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAANkkAADZJAQjcsAYAAAVmSURBVFhH7VnNa11FFH/Wj2q1jcn7SFqLFSwKBRHBhQsX/hduRHDTjW5cFRdSFEFF2+TNDS3RYsGF1ID4HUWjiVqTvJmXD0Ka0mIRrSCFUkVcap/nd+6cm7nz5r6vxCTo/cGP++bMmXNm5s6bOWduoXfsPzZzWzkyDZ8D1bn9hb7hxTtDlUPVhUNJJay4z6RSBEKUufJfgOtHfKV65f5OCYCkLD98Wr0thT/fWeR6pa+nXlKqskW5qZGrkPU7fqnj4ze6wlaEXvHU+d14/k8xVr+5rIwJzU6KSv/O+igcOD11Kz2nUwoOS8r8KrrJeyi+enY3WflYysJSpH8QZTD14vYcmxkoR/odKZPlxUKjcYOrk2owODx7D7aSktInqTyN8Q2eWKq4OkmDwdeWbhfr/SP1u+Myd+n9vWP1XaLHDdit0vMi9Eldm8Haw2+Mp0BduOIrNVGZC6ycY5uiFJml4JvrkbS2/rSmna306MotKGMN+Q26IbW/yoYJtLD/Dm69WNlQoPX5hStvS2V+ZssEVx50Iuwfq/ehAU3je6H6hEqvsmVCqL6lE6FtD2enXTmNdM5WBY0LKdbIdkLTVooN6OMol46bvSjTCz2Mp90U8Q7eRjnLTnAk2KbQiHr+pSsXlqr6oaCc9NEOC8iVp5ywAoF6dslV6pb4K7AhuwGzEwFNw8tlVRvZMEb6OWs6R44cmw5seP4WsF4WI/MYG8d5gGffieX+kGIvrFTrj7BtpR+P93kKNyGgfX2Pr9wtsQPDFu1LT6GcHCTk7XNUSPDYC/nggXFlnhGZd1Lpr6GQlSW3ZNXcy8Yjc8SVew54JN9B8WD14k6/LosIm2Pj+kW/rskBmJzFSDwC9SmO1oascT5yfQYdMClOZyc2Hg8xOc+VGQvVg9kOiGtnb2OHX7cW9tCp6NW5zHSAs5qNC9ykZ3TlDpHhQVO67LZ1meVggQ0Q4rI+b4scxuBJHfgMdZJO00hmnfYJmxxQw0k0KByduiklt3keQO9nyq1z4t9JV851nuAMFLP/bPonMhIMopO4l7I7V+440FUorGfjS148RYEiEwdHUIEEVSp6JQVeZXYS6QhlrOEnISiruQd95V7JF29sU7+EZ2FfVCsGI7V18GB1Yicbz5EjR44cOToAxRYIhbc7D43HcU0a1Hn7qxDfb5sF//DdJvyjPFp/1HZ1DXKvRHHnBxK5AYh9EN57RraGSl8rRrWHbdcYFaWfoEjpr6xrvgkkPla3gM8VSIg8nU0h+b1SicwDtisMivUO06Cui07LC1GkJlh/ti0i2l0U3X4V0t1wKvNLKardZ10zKBp+NqTbchAJlfkmSXkIyFDIIGcnG02auB8RoVtXDPL1fEhX2NkgLJGc4DrC2uaLW/yPQrpdU5kLAydn7rKWGWT7laCux64GkVAZgwsc6ytO+ZR5N6jbhtTRZXyos5Y4uZX8plP2NghLejOLSHGse747IFmSxbVk00Q0dlDbt4K6bbiuQRAvF4f1/bYba4g/Xr4Z0Edifha7ndVMgA8c1GY11KYde1xOerUYze+z/hk0sy/QTK5URmYHrSi1NKhuUhJ7IL670p9gsHgLVmyT1+yvtyF298eOzPeS/DPiW6E3fD3iRf9PKsCWja070OaMGzXwp/RIfxvQa2Kng/jIPfx4FpX5MKCXortddtwppT+VSybAfjebaNJz2GYQ+pT7qjkMoTUd1m1B53TtgtPu2dRqBwwPQm5XLLD+SX4upbNZpF0MAantSryEvU2DB8H36Txb+mmrysDOQ0qX3QZbyHNyfyyg/r6OOj88YeDrASn85hnZFqRd7tLQ6PwB29UcOXL8d1Eo/AOJYQL8UnTUTAAAAABJRU5ErkJggg==) no-repeat;background-size:80% 80%}li.mysite:before{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAuCAYAAAHLiaCiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAMjkAADI5Ad+HSP4AAAT/SURBVFhH5VnPa1RXFB6Ki5aKi0LrTigFwdqVUEppIf4BXbUiBdfahQvpRrtqq9ZFoRbtL3RhpCilpnTR4s+NcVNJY1ZpoUEn6a8kJlZHQ3QmM5gZz3fnnJfz7jv33fcmJhT84CPvnvOd8+69777z7p1UcvH8l9c6+Ds8fu+kXCfoEGAUOiMuxm/VXaOYAxBDyhiEqFIR0hAkjvd+qKbyZiJcg6CvE2fKqDH67/xPWgSeG709wu4l9F+d7pcsImy32y/LNbhzoLp0F3J+dOjSP84hkGsdRLrXXYA2yhQLtI9NXYhxeGLODOCmDRooBpsvKg25tSYN8i12LwEOwlpupgIJa9jcdVCGfWdHb3+F6y8GJzuDY3eO6AAnvDxW+w5OCfIh4r0//9lxAhHmiUWX6p8zKKR875y6njScwUPGlzEoZOw6O5sSmPZPLv6dBGgiEUuymKwtHMfaqM4+CIvygGDcWbishabHjAeM5Y6Eejg+acW8z+E2PPEW2IYn7h0WmxMRtp1OP05Niutj2RLEyU0HHSREedhHS9HyCRvNxY85RTcJekN33ShtoQ/fprWalOu8Sy44efWmKeyFnNIevtAvdj6sGJDQrR2/0mqwBGAvyftpBtjdxeBYLSMCyybHe8CuLPyqAf4+OW8G+EuSzcVg3cgnS/9nQDHCw5GacpRKwW+BKSoEfLGt4WtiuhqtxR85JB9D43MXdTCKFCg7AYsDI7P5I8CQRYzKR3iKXQ70Cr+tE2q6T50FzKWI9O5BlpbU63qr3Sc6n2euzQ65IA1xok5LT3UQSNhq2TXrrc6b0DjoKWCTWZcxz3lzDaa+e2LkZgW9FpsP3yY6TXoWb7hEaEzVFj7A9dTdhW+1yIdv01qhW+eodHhYdJdn5SaaPnybrwfxEiFXAkvUC5NqNzw+d8ASgE4QQOgLnyS2nEInCCCUOCn8llPoBAGEEie7KMspdIIAQonZHRaALDFhxaXOMYAvELLbhJWYXWn4oqCQ4e9P8E6wKw1rW4Cawe4U8FJpXWYLYEEHFGHpvbSVRLNQL/OAooIHBQbn8YlGdeb+AKa5yKbJ58ELfx0fmpj7mnYPA1Sx93DKx4/afPMYiqLVieUSxQALlwawg2+3PIQqFb68zWZ7MzT0qdpKN1znAhR6OZtgB1RvPnyXU5RDaOevd0waNFOfVWfr041G+yU2OdBg+s6N/nfQypVHdJ5in+M0cVjrFDNOSV4lul0DcGZk5ryvE+LUQdrtLK30/3Jzv6WL8cbMg08pzyZOk8Wd+Vbm1zf80Eez9yItgadZlruBEPK5+Bnia4ihJ5Gc5MuSntQFyvOKu7kPX8zmFOTXSmEMMZ3OlUeqNqdJvoG70YWuDOgYmxNc+aP2uU4ijCGm07libDQX98uTq9C6OSEOXosfEtc7J8GfXc0YYjqdK0a8V4RdrlNSEaijWLvJr5pFSlYMMZ3OFWOyebZQpr5CK3uHsowd0XxmOm2JijD2i00e0HErZ4joNK2G7q/7gCUqwtXsNPQc2gWOh5YwxtXqdOo0r9HLjm21Op17Eijb8dXodKFf2cpsQVey05jA2v1W8fxTdxcKbfCxx5iuNb6nt/oFDi2Eacpv5RNmXroyKNp5EP9tuEJbWmv2q7fq38CX93UFsSXmkMcDJOzlZY1x2afjMsDpGaWyzEDwvmDwpdbqSoHW9G7iAW6uICqVR7Pi/jEKbRspAAAAAElFTkSuQmCC) no-repeat;background-size:80% 80%}li.myIM:before{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAoCAYAAAEOBwNLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAKUsAAClLAfHOe+UAAAKJSURBVEhLzZe/SxxBFMe3CFikSBWw8p8QbEICgaSLpY3+ARYhdfqAlkEUUhkrbQxEkLNIlatSJDZ6RUQSJXgo6t2J3nkXD7z1fefe3u3tvp3Z2d378YEv3M689+bNzNvZOSeSpyu/XE9rP87cUCNkbiwUq+0Gkfkvf6JdPRGv5EFAqMEjt3f52e8BFU6qH7i7TdAgKDYzG7ZarZfKkH5MSwaQMvAjNiYmOFwoumTgyWgAYb+MRlA8o78Xt2KHJ5UTmFk/FA3ebx9HzzDUCdDBP+34eXTtBtPACPoC9xE1hyiJ6ZtWzKTbZmuKQ5l3O46o3N9mFkwFAlKnjUJrhwbJ0KTOySchOUgylsjCt389DpVaU+8QRaF4s4wS4ccRZTlf7JkuhIWmWlpiEz1BZ0l43Sjga3bp5fSqsSg56dS4u19k9y6SYRyxexvJIK7UiQwqtbuPkoGNaL3mxN2xFQ7L1C8xhDcju0CZTQ1InTZSQYDUGVed7feQjOKI3bucXv0XDXViVxnJIajQdIKYPqKbu+f6AB5+J+0hr2Nnv6QCqOJKQ+oAacFHwy/sPvGIu/tHudr8ivX374eNUDG5/dInOroec8hk0CdhKektwSRMsOa645TkGA+nh5JZsL0vJhUmXa+7Ezy0TJotSiP6w7ZFdfiE0+iSxVGeRt9/V1YpsUlOx3HyBxXRcNDC3ZHq7LlKql8FbSsclJ3VkgyGoZ5Dd5RWirbvmUpqxGrqjUoKDPvt61zCguD7Lzn0W8a/eIM+0XlYM7SvL8q15kY/v308VDKkoLbCLQFvFodMDgpPGsAvzFi6T3GIbKH703ZUEnht2WywYLmRBE5YzJ6bhwcV+TvSLD8OAcd5AAyCrGZ9lorsAAAAAElFTkSuQmCC) no-repeat;background-size:80% 80%}.datesEdu,.datesWork,.degree,.occupation{color:#0e4194;font-weight:700}.employer,.institution{font-style:oblique;margin:3pt 0}main h5,th{color:#0e4194;font-size:10pt}p+ul{margin-top:7pt}#digitalskills p,#otherlanguages p{font-size:8pt;color:#0e4194;font-weight:700}table{width:100%;text-align:center;border-collapse:collapse}td,th{padding:5px;margin:0;border-bottom:1px solid #0e4194;border-right:1px solid #0e4194}tr td:last-child,tr th:last-child{border-right-style:none}td{width:20%}.langname{font-weight:700}.compcert,.langcert{background:#ececec}#addiotionalInfo li:before,#annexes li:before,#commskills li:before,#digitalskills li:before,#jobskills li:before,#orgskills li:before,#otherskills li:before{content:'\2022';color:#000;margin-right:5pt}
+	</style>
+</head>
+
+<body>
+<div>
+<div class="workArea">
+		<div id="myResume" class="A4 portrait">
+			<aside>
+				<div>
+					<img src="data:image/png;base64,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" alt="EuroPass logo"/>
+				</div>
+				<div>
+					 Curriculum Vitae
+				</div>
+				<div class="mynames defaultInfo">
+					Replace with First name(s) Surname(s)
+				</div>
+			</aside>
+			
+			<main>
+				<div class='mainWrapper'>
+<!-- start aboutMe section -->
+					<section id="personalInfo">
+						<div>
+							<h2>Personal information</h2>
+							<div id="myImage">
+								<img src="../img/snimka.jpg" alt="my photo" />
+							</div>
+						</div>
+						<div>
+							<h3><span class="defaultInfo">Replace with First name(s) Surname(s)</span></h3>
+							<ul class="details">
+								<li class="myaddress defaultInfo">Replace with house number, street name, city, postcode, country </li>
+								<li class="myhomephone defaultInfo">Replace with telephone number</li>
+								<li class="mymobile defaultInfo">Replace with mobile number</li>
+								<li class="myemail defaultInfo">State e-mail address</li>
+								<li class="mysite defaultInfo">State personal website(s)</li>
+								<li class="myIM defaultInfo">Replace with type of IM service Replace with messaging account(s)</li>
+							</ul>
+							<ul class="moredetails">
+								<li class="mygender defaultInfo">Enter sex</li>
+								<li class="mybirth defaultInfo">dd/mm/yyyy</li>
+								<li class="mynationality defaultInfo">Enter nationality/-ies</li>
+							</ul>
+						</div>
+					</section>
+				
+					<section id="jobs">
+						<div>
+							<h2>Job position</h2>
+						</div>
+						<div class="defaultInfo">
+							Replace with job applied for / position / preferred job / studies applied for / personal statement (delete non relevant headings in left column)
+						</div>
+					</section>
+<!-- end aboutMe section -->
+<!-- start myExperience section -->				
+					<section id="forWork" class="headline">
+						<div><h2>Work experience</h2></div>
+						<div>&nbsp;</div>
+					</section>
+					<section class="myExperience defaultInfo">
+						<div>
+							<div class="datesWork">Replace with dates (from - to)</div>
+						</div>
+						<div>
+							<div class="occupation">Replace with occupation or position held</div>
+							<div class="employer">Replace with employer’s name and locality (if relevant, full address and website)</div>
+							<div class="description">▪	Replace with main activities and responsibilities</div>
+						</div>
+					</section>
+<!-- end myExperience section -->					
+<!-- start myLearning section -->					
+					<section id="forLearning" class="headline">
+						<div><h2>Education</h2></div>
+						<div>&nbsp;</div>
+					</section>
+					<section class="myLearning defaultInfo">
+						<div>
+							<div class="datesEdu">Replace with dates (from - to)</div>
+						</div>
+						<div>
+							<div class="degree">Replace with qualification awarded</div>
+							<div class="institution">Replace with education or training organisation’s name and locality (if relevant, country)</div>
+							<div class="description">▪	Replace with a list of principal subjects covered or skills acquired</div>
+						</div>
+					</section>
+<!-- end myLearning section -->								
+<!-- start mySkills section -->						
+					<section id="forSkills" class="headline">
+						<div><h2>Personal Skills</h2></div>
+						<div>&nbsp;</div>
+					</section>
+					
+					<section id="mothertongue">
+						<div>
+							<h5>Mother tongue(s)</h5>
+						</div>
+						<div class="defaultInfo">
+							Replace with mother tongue(s)
+						</div>
+					</section>
+					
+					<section id="otherlanguages">
+						<div>
+							<h5>Other language(s)</h5>
+						</div>
+						<div>
+							<table>
+								<tr>
+									<th colspan="2">Understanding</th>
+									<th colspan="2">Speaking</th>
+									<th>Writing</th>
+								</tr>
+								<tr>
+									<th>Listening</th>
+									<th>Reading</th>
+									<th>Spoken interaction</th>
+									<th>Spoken production</th>
+									<th>&nbsp;</th>
+								</tr>
+								
+								<tr class="langname defaultInfo">
+									<td colspan="5">Replace with language</td>
+								</tr>
+								<tr class="langskill defaultInfo">
+									<td>Enter level</td>
+									<td>Enter level</td>
+									<td>Enter level</td>
+									<td>Enter level</td>
+									<td>Enter level</td>
+								</tr>
+								<tr class="langcert defaultInfo">
+									<td colspan="5">Replace with name of language certificate. Enter level if known.</td>
+								</tr>
+							</table>
+							<p>Levels: A1/A2: Basic user - B1/B2: Independent user - C1/C2 Proficient user (<a href="http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr">Common European Framework of Reference for Languages</a>).</p>
+						</div>
+					</section>
+					
+					<section id="commskills">
+						<div>
+							<h5>Communication skills</h5>
+						</div>
+						<div>
+							<ul>
+								<li class="defaultInfo">Replace with your communication skills. Specify in what context they were acquired. Example:<br/>▪	good communication skills gained through my experience as sales manager.</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section id="orgskills">
+						<div>
+							<h5>Organisational / managerial skills</h5>
+						</div>
+						<div>
+							<ul>
+								<li class="defaultInfo">Replace with your organisational / managerial skills. Specify in what context they were acquired. Example: <br/>▪	leadership (currently responsible for a team of 10 people)</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section id="jobskills">
+						<div>
+							<h5>Job-related skills</h5>
+						</div>
+						<div>
+							<ul>
+								<li class="defaultInfo">Replace with any job-related skills not listed elsewhere. Specify in what context they were acquired. Example: <br/>▪	good command of quality control processes (currently responsible for quality audit)</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section id="digitalskills">
+						<div>
+							<h5>Digital competence</h5>
+						</div>
+						<div>
+							<table>
+								<tr>
+									<th colspan="5">SELF-ASSESSMENT</th>
+								</tr>
+								<tr>
+									<th>Information processing</th>
+									<th>Communication</th>
+									<th>Content creation</th>
+									<th>Safety</th>
+									<th>Problem solving</th>
+								</tr>
+								<tr class="digiskills defaultInfo">
+									<td>Enter level</td>
+									<td>Enter level</td>
+									<td>Enter level</td>
+									<td>Enter level</td>
+									<td>Enter level</td>
+								</tr>
+								<tr class="compcert defaultInfo">
+									<td colspan="5">Replace with name of ICT certificate.</td>
+								</tr>
+							</table>
+							<p>Levels: Basic user  - Independent user  -  Proficient user (<a href="http://europass.cedefop.europa.eu/en/resources/digital-competences">Digital competences - Self-assessment grid</a>)</p>
+							
+							<ul>
+								<li class="defaultInfo">Replace with your other computer skills. Specify in what context they were acquired. Example:<br/>▪	good command of office suite (word processor, spread sheet, presentation software)<br/>▪	good command of photo editing software gained as an amateur photographer.</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section id="otherskills">
+						<div>
+							<h5>Other skills</h5>
+						</div>
+						<div>
+							<ul>
+								<li class="defaultInfo">Replace with other relevant skills not already mentioned. Specify in what context they were acquired. Example:<br/>▪	carpentry</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section id="drivingskills">
+						<div>
+							<h5>Driving licence</h5>
+						</div>
+						<div class="defaultInfo">
+							Replace with driving licence category/-ies. Example:<br/>B
+						</div>
+					</section>
+<!-- end mySkills section -->						
+<!-- start Additional Information section -->	
+					<section id="forAddInfo" class="headline">
+						<div><h2>Additional Information</h2></div>
+						<div>&nbsp;</div>
+					</section>
+					<section id="addiotionalInfo">
+						<div>
+							<div>&nbsp;</div>
+						</div>
+						<div>
+							<ul>
+								<li class="defaultInfo">Replace with relevant publications, presentations, projects, conferences, seminars, honours and awards, memberships, references. Remove headings not relevant in the left column.<br/>Example of publication:<br/>▪	How to write a successful CV, New Associated Publishers, London, 2002.<br/>Example of project:<br/>▪	Devon new public library. Principal architect in charge of design, production, bidding and construction supervision (2008-2012).</li>
+							</ul>
+						</div>
+					</section>
+<!-- end Additional Information section -->				
+<!-- start Annexes section -->	
+					<section id="forAnnexes" class="headline">
+						<div><h2>Annexes</h2></div>
+						<div>&nbsp;</div>
+					</section>
+					<section id="annexes">
+						<div>
+							<div>&nbsp;</div>
+						</div>
+						<div>
+							<ul>
+								<li class="defaultInfo">Replace with list of documents annexed to your CV. Examples:<br/>▪	copies of degrees and qualifications;<br/>▪	testimonial of employment or work placement;<br/>▪	publications or research.</li>
+							</ul>
+						</div>
+					</section>
+<!-- end Annexes section -->						
+				</div>
+			</main>
+		</div>
+	</div>
+
+<nav class="panelOpen panelOpen--closed">
+
+</nav>
+
+<section id="globalTemplating" class="globalTemplating--closed">
+	<section id="formContent">
+		<nav>
+			<div class="buttonGroup">
+				<button type="button" id="fillDefault">default</button>
+				<button type="button" id="updateTemplate">update template</button>
+				<button type="button" class="close-btn">close</button>
+			</div>
+			
+			<ul>
+				<li><a class="prev-slide" href="#">&larr;</a></li>
+				<li>Field <span class="currentField"></span> of <span class="totalFields"></span></li>
+				<li><a class="next-slide" href="#">&rarr;</a></li>
+			</ul>
+		</nav>
+		
+		<div id="myForm">
+			<form>
+				<fieldset id="aboutMeForm">
+					<h2>About me</h2>
+					<div>
+						<span class="input input--shoko">
+							<input type="file" name="aboutMeImage-0" class="input__field input__field--shoko inputfile inputfile-3" id="aboutMeImage-0" />
+							<label for="aboutMeImage-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose an image/photo&hellip;</span></label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-1" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-1">
+								<span class="input__label-content input__label-content--shoko">First and Last name(s)</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-2" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-2">
+								<span class="input__label-content input__label-content--shoko">Address</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-3" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-3">
+								<span class="input__label-content input__label-content--shoko">Home phone number</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-4" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-4">
+								<span class="input__label-content input__label-content--shoko">Mobile phone number</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-5" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-5">
+								<span class="input__label-content input__label-content--shoko">Email</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-6" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-6">
+								<span class="input__label-content input__label-content--shoko">Personal website</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-7" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-7">
+								<span class="input__label-content input__label-content--shoko">IM service/account</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-8" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-8">
+								<span class="input__label-content input__label-content--shoko">Gender</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-9" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-9">
+								<span class="input__label-content input__label-content--shoko">Date of birth</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-10" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-10">
+								<span class="input__label-content input__label-content--shoko">Nationality/-ies</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="aboutMeForm-11" />
+							<label class="input__label input__label--shoko" for="aboutMeForm-11">
+								<span class="input__label-content input__label-content--shoko">Job position</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+								
+				<fieldset id="myLearningForm">
+					<h2>Education</h2>
+					<span><button type="button" class="addMore">add more</button></span>
+					<div>
+						<span class="counterFor">Set 1</span>
+						<span><button type="button" class="deleteClone deleteClonedLearning">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myLearningForm-1" />
+							<label class="input__label input__label--shoko" for="myLearningForm-1">
+								<span class="input__label-content input__label-content--shoko">Degree</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myLearningForm-2" />
+							<label class="input__label input__label--shoko" for="myLearningForm-2">
+								<span class="input__label-content input__label-content--shoko">Dates</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myLearningForm-3" />
+							<label class="input__label input__label--shoko" for="myLearningForm-3">
+								<span class="input__label-content input__label-content--shoko">Institution</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko input--shoko2">
+							<textarea rows='10' class="input__field input__field--shoko" id="myLearningForm-4"></textarea>
+							<label class="input__label input__label--shoko" for="myLearningForm-4">
+								<span class="input__label-content input__label-content--shoko">Description</span>
+							</label>
+							<svg class="graphic graphic--shoko2" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset id="myExperienceForm">
+					<h2>Work experience</h2>
+					<span><button type="button" class="addMore">add more</button></span>
+					<div>
+						<span class="counterFor">Set 1</span>
+						<span><button type="button" class="deleteClone deleteClonedWork">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myExperienceForm-1" />
+							<label class="input__label input__label--shoko" for="myExperienceForm-1">
+								<span class="input__label-content input__label-content--shoko">Occupation</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myExperienceForm-2" />
+							<label class="input__label input__label--shoko" for="myExperienceForm-2">
+								<span class="input__label-content input__label-content--shoko">Period/dates</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myExperienceForm-3" />
+							<label class="input__label input__label--shoko" for="myExperienceForm-3">
+								<span class="input__label-content input__label-content--shoko">Employer</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<span class="input input--shoko input--shoko2">
+							<textarea rows='10' class="input__field input__field--shoko" id="myExperienceForm-4"></textarea>
+							<label class="input__label input__label--shoko" for="myExperienceForm-4">
+								<span class="input__label-content input__label-content--shoko">Description</span>
+							</label>
+							<svg class="graphic graphic--shoko2" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset id="myLanguagesForm" class="no">
+					<h2>Languages</h2>
+					<span><button type="button" class="addMore">add more</button></span>
+					
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myLanguagesForm-0" />
+							<label class="input__label input__label--shoko" for="myLanguagesForm-0">
+								<span class="input__label-content input__label-content--shoko">Mother tongue</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					
+					<div>
+						<span class="counterFor">Set 1</span>
+						<span><button type="button" class="deleteClone deleteClonedLang">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myLanguagesForm-1" />
+							<label class="input__label input__label--shoko" for="myLanguagesForm-1">
+								<span class="input__label-content input__label-content--shoko">Language</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+						
+						<h4>Listening</h4>
+						<ul class="lLevel-listening">
+							<li>
+								<input type="radio" name="listening" value="A1" id="lO1-listening" />
+								<label for="lO1-listening">A1</label>
+							</li>
+							<li>
+								<input type="radio" name="listening" value="A2" id="lO2-listening" />
+								<label for="lO2-listening">A2</label>
+							</li>
+							<li>
+								<input type="radio" name="listening" value="B1" id="lO3-listening" />
+								<label for="lO3-listening">B1</label>
+							</li>
+							<li>
+								<input type="radio" name="listening" value="B2" id="lO4-listening" />
+								<label for="lO4-listening">B2</label>
+							</li>
+							<li>
+								<input type="radio" name="listening" value="C1" id="lO5-listening" />
+								<label for="lO5-listening">C1</label>
+							</li>
+							<li>
+								<input type="radio" name="listening" value="C2" id="lO6-listening" />
+								<label for="lO6-listening">C2</label>
+							</li>
+						</ul>
+						
+						<h4>Reading</h4>
+						<ul class="lLevel-reading">
+							<li>
+								<input type="radio" name="reading" value="A1" id="lO1-reading" />
+								<label for="lO1-reading">A1</label>
+							</li>
+							<li>
+								<input type="radio" name="reading" value="A2" id="lO2-reading" />
+								<label for="lO2-reading">A2</label>
+							</li>
+							<li>
+								<input type="radio" name="reading" value="B1" id="lO3-reading" />
+								<label for="lO3-reading">B1</label>
+							</li>
+							<li>
+								<input type="radio" name="reading" value="B2" id="lO4-reading" />
+								<label for="lO4-reading">B2</label>
+							</li>
+							<li>
+								<input type="radio" name="reading" value="C1" id="lO5-reading" />
+								<label for="lO5-reading">C1</label>
+							</li>
+							<li>
+								<input type="radio" name="reading" value="C2" id="lO6-reading" />
+								<label for="lO6-reading">C2</label>
+							</li>
+						</ul>
+						
+						<h4>Spoken interaction</h4>
+						<ul class="lLevel-interaction">
+							<li>
+								<input type="radio" name="interaction" value="A1" id="lO1-interaction" />
+								<label for="lO1-interaction">A1</label>
+							</li>
+							<li>
+								<input type="radio" name="interaction" value="A2" id="lO2-interaction" />
+								<label for="lO2-interaction">A2</label>
+							</li>
+							<li>
+								<input type="radio" name="interaction" value="B1" id="lO3-interaction" />
+								<label for="lO3-interaction">B1</label>
+							</li>
+							<li>
+								<input type="radio" name="interaction" value="B2" id="lO4-interaction" />
+								<label for="lO4-interaction">B2</label>
+							</li>
+							<li>
+								<input type="radio" name="interaction" value="C1" id="lO5-interaction" />
+								<label for="lO5-interaction">C1</label>
+							</li>
+							<li>
+								<input type="radio" name="interaction" value="C2" id="lO6-interaction" />
+								<label for="lO6-interaction">C2</label>
+							</li>
+						</ul>
+						
+						<h4>Spoken production</h4>
+						<ul class="lLevel-production">
+							<li>
+								<input type="radio" name="production" value="A1" id="lO1-production" />
+								<label for="lO1-production">A1</label>
+							</li>
+							<li>
+								<input type="radio" name="production" value="A2" id="lO2-production" />
+								<label for="lO2-production">A2</label>
+							</li>
+							<li>
+								<input type="radio" name="production" value="B1" id="lO3-production" />
+								<label for="lO3-production">B1</label>
+							</li>
+							<li>
+								<input type="radio" name="production" value="B2" id="lO4-production" />
+								<label for="lO4-production">B2</label>
+							</li>
+							<li>
+								<input type="radio" name="production" value="C1" id="lO5-production" />
+								<label for="lO5-production">C1</label>
+							</li>
+							<li>
+								<input type="radio" name="production" value="C2" id="lO6-production" />
+								<label for="lO6-production">C2</label>
+							</li>
+						</ul>
+						
+						<h4>Writing</h4>
+						<ul class="lLevel-writing">
+							<li>
+								<input type="radio" name="writing" value="A1" id="lO1-writing" />
+								<label for="lO1-writing">A1</label>
+							</li>
+							<li>
+								<input type="radio" name="writing" value="A2" id="lO2-writing" />
+								<label for="lO2-writing">A2</label>
+							</li>
+							<li>
+								<input type="radio" name="writing" value="B1" id="lO3-writing" />
+								<label for="lO3-writing">B1</label>
+							</li>
+							<li>
+								<input type="radio" name="writing" value="B2" id="lO4-writing" />
+								<label for="lO4-writing">B2</label>
+							</li>
+							<li>
+								<input type="radio" name="writing" value="C1" id="lO5-writing" />
+								<label for="lO5-writing">C1</label>
+							</li>
+							<li>
+								<input type="radio" name="writing" value="C2" id="lO6-writing" />
+								<label for="lO6-writing">C2</label>
+							</li>
+						</ul>						
+						
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myLanguagesForm-2" />
+							<label class="input__label input__label--shoko" for="myLanguagesForm-2">
+								<span class="input__label-content input__label-content--shoko">Certification</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset id="myCommSkillsForm">
+					<h2>Communication skills</h2>
+					<span><button type="button" class="addMore">add more</button></span>
+					<div>
+						<span><button type="button" class="deleteClone deleteClonedCommSkill">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myCommSkills-1" />
+							<label class="input__label input__label--shoko" for="myCommSkills-1">
+								<span class="input__label-content input__label-content--shoko">Communication skill 1</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset id="myOrgSkillsForm">
+					<h2>Organisational / managerial skills</h2>
+					<span><button type="button" class="addMore">add more</button></span>
+					<div>
+						<span><button type="button" class="deleteClone deleteClonedOrgSkill">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myOrgSkills-1" />
+							<label class="input__label input__label--shoko" for="myOrgSkills-1">
+								<span class="input__label-content input__label-content--shoko">Organizational skill 1</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset id="myJobSkillsForm">
+					<h2>Job-related skills</h2>
+					<span><button type="button" class="addMore" id="moreSkills">add more</button></span>
+					<div>
+						<span><button type="button" class="deleteClone deleteClonedJobSkill">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myJobSkills-1" />
+							<label class="input__label input__label--shoko" for="myJobSkills-1">
+								<span class="input__label-content input__label-content--shoko">Job-related skill 1</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset id="myDigitalCompForm">
+					<h2>Digital competence</h2>
+					
+					<h4>Information<br/>processing</h4>
+					<ul class="infProcessing">
+						<li>
+							<input type="radio" name="infProcessing" value="Basic user" id="infProcessingO1" />
+							<label for="infProcessingO1">Basic</label>
+						</li>
+						<li>
+							<input type="radio" name="infProcessing" value="Independent user" id="infProcessingO2" />
+							<label for="infProcessingO2">Independent</label>
+						</li>
+						<li>
+							<input type="radio" name="infProcessing" value="Proficient user" id="infProcessingO3" />
+							<label for="infProcessingO3">Proficient</label>
+						</li>
+					</ul>
+					
+					<h4>Communication</h4>
+					<ul class="Communication">
+						<li>
+							<input type="radio" name="Communication" value="Basic user" id="CommunicationO1" />
+							<label for="CommunicationO1">Basic</label>
+						</li>
+						<li>
+							<input type="radio" name="Communication" value="Independent user" id="CommunicationO2" />
+							<label for="CommunicationO2">Independent</label>
+						</li>
+						<li>
+							<input type="radio" name="Communication" value="Proficient user" id="CommunicationO3" />
+							<label for="CommunicationO3">Proficient</label>
+						</li>
+					</ul>
+					
+					<h4>Content creation</h4>
+					<ul class="contCreation">
+						<li>
+							<input type="radio" name="contCreation" value="Basic user" id="contCreationO1" />
+							<label for="contCreationO1">Basic</label>
+						</li>
+						<li>
+							<input type="radio" name="contCreation" value="Independent user" id="contCreationO2" />
+							<label for="contCreationO2">Independent</label>
+						</li>
+						<li>
+							<input type="radio" name="contCreation" value="Proficient user" id="contCreationO3" />
+							<label for="contCreationO3">Proficient</label>
+						</li>
+					</ul>
+					
+					<h4>Safety</h4>
+					<ul class="Safety">
+						<li>
+							<input type="radio" name="Safety" value="Basic user" id="SafetyO1" />
+							<label for="SafetyO1">Basic</label>
+						</li>
+						<li>
+							<input type="radio" name="Safety" value="Independent user" id="SafetyO2" />
+							<label for="SafetyO2">Independent</label>
+						</li>
+						<li>
+							<input type="radio" name="Safety" value="Proficient user" id="SafetyO3" />
+							<label for="SafetyO3">Proficient</label>
+						</li>
+					</ul>
+					
+					<h4>Problem solving</h4>
+					<ul class="probSolving">
+						<li>
+							<input type="radio" name="probSolving" value="Basic user" id="probSolvingO1" />
+							<label for="probSolvingO1">Basic</label>
+						</li>
+						<li>
+							<input type="radio" name="probSolving" value="Independent user" id="probSolvingO2" />
+							<label for="probSolvingO2">Independent</label>
+						</li>
+						<li>
+							<input type="radio" name="probSolving" value="Proficient user" id="probSolvingO3" />
+							<label for="probSolvingO3">Proficient</label>
+						</li>
+					</ul>
+					
+					<span class="input input--shoko">
+						<input class="input__field input__field--shoko" type="text" id="myDigitalCompForm-1" />
+						<label class="input__label input__label--shoko" for="myDigitalCompForm-1">
+							<span class="input__label-content input__label-content--shoko">Certification</span>
+						</label>
+						<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+							<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+							<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+						</svg>
+					</span>
+						
+					<h2>Computer Skills</h2>
+					<span><button type="button" class="addMore">add more</button></span>
+					<div>
+						<span><button type="button" class="deleteClone deleteClonedCompSkill">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="compSkills-1" />
+							<label class="input__label input__label--shoko" for="compSkills-1">
+								<span class="input__label-content input__label-content--shoko">Skill 1</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset id="myOtherSkillsForm">
+					<h2>Other skills</h2>
+					<span><button type="button" class="addMore">add more</button></span>
+						
+					<span class="input input--shoko">
+						<input class="input__field input__field--shoko" type="text" id="myDrivingSkills-1" />
+						<label class="input__label input__label--shoko" for="myDrivingSkills-1">
+							<span class="input__label-content input__label-content--shoko">Driving licence</span>
+						</label>
+						<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+							<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+							<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+						</svg>
+					</span>
+					
+					<div>
+						<span><button type="button" class="deleteClone deleteClonedOtherSkill">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myOtherSkills-1" />
+							<label class="input__label input__label--shoko" for="myOtherSkills-1">
+								<span class="input__label-content input__label-content--shoko">Other skill 1</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset id="myAddInfoForm">
+					<h2>Additional information</h2>
+					<span><button type="button" class="addMore">add more</button></span>
+					<div>
+						<span><button type="button" class="deleteClone deleteClonedAddInfo">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myAddInfo-1" />
+							<label class="input__label input__label--shoko" for="myAddInfo-1">
+								<span class="input__label-content input__label-content--shoko">Details 1</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset id="myAnnexesForm">
+					<h2>Annexes</h2>
+					<span><button type="button" class="addMore" id="moreSkills">add more</button></span>
+					<div>
+						<span><button type="button" class="deleteClone deleteClonedAnnex">delete</button></span>
+						<span class="input input--shoko">
+							<input class="input__field input__field--shoko" type="text" id="myAnnexes-1" />
+							<label class="input__label input__label--shoko" for="myAnnexes-1">
+								<span class="input__label-content input__label-content--shoko">Annex 1</span>
+							</label>
+							<svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+								<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+								<path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"/>
+							</svg>
+						</span>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+</section>
+	
+</div>	
+	
+	<!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+	<script src="../js/helpers/1.10.2.js" type="text/javascript"></script>
+	<script src="../js/helpers/1.10.4-sortable.js" type="text/javascript"></script>
+	<script src="../js/helpers/ResizeSensor.js" type="text/javascript"></script>
+	<script src="../js/helpers/perfect-scrollbar.jquery.js" type="text/javascript"></script>
+	<script src="../js/helpers/classie.js" type="text/javascript"></script>
+	<script src="../js/helpers/FileSaver.min.js" type="text/javascript"></script>
+	<script src="../js/helpers/jquery.base64.min.js" type="text/javascript"></script>
+	
+	<script src="../js/templates/!imports.js" type="text/javascript"></script>
+
+	<script src="../js/templates/!general.js" type="text/javascript"></script>
+	<script src="../js/templates/EuroPass.js" type="text/javascript"></script>
+</body>
+
+</html>

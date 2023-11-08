@@ -1,0 +1,285 @@
+/* aside */
+aside {
+	position: relative;
+	top: 0;
+	width: 100%;
+	background: rgb(87,121,133);
+}
+
+		div.portrait aside {
+			height: 39mm;
+		}
+
+		div.landscape aside {
+			height: 38mm;
+		}
+
+/* name section */
+.nameSection {
+	width: calc(75% - 40pt);
+	color: rgb(207,207,207);
+	position: absolute;
+	top: 50pt;
+	right: 0;
+}		
+		
+.nameSection h1 {
+	font-weight: bolder;
+	font-size: 20pt;
+}
+
+.nameSection p {
+	margin-top: 10pt;
+}
+
+/* contacts and other aside */	
+.contactInfo {
+	position: absolute;
+	top: 50pt;
+	bottom: 50pt;
+	left: 15pt;
+	height: 80%;
+	background: rgb(207,207,207);
+	z-index: 10;
+}
+
+		div.portrait .contactInfo {
+			width: 25%;
+		}
+
+		div.landscape .contactInfo {
+			width: 20%;
+		}
+		
+		div.A4.portrait .contactInfo {
+			height: calc(297mm - 100pt);
+		}
+
+		div.A4.landscape .contactInfo {
+			height: calc(210mm - 100pt);
+		}
+		
+		div.Letter.portrait .contactInfo {
+			height: calc(279.4mm - 100pt);
+		}
+
+		div.Letter.landscape .contactInfo {
+			height: calc(216mm - 100pt);
+		}
+		
+		div.Legal.portrait .contactInfo {
+			height: calc(355.6mm - 100pt);
+		}
+
+		div.Legal.landscape .contactInfo {
+			height: calc(216mm - 100pt);
+		}
+
+.personalPhoto {
+	width: 70%;
+	margin: 12mm auto;
+	overflow: hidden;
+	-webkit-transform: rotate(-8deg) translate( 0, -5%);
+    -webkit-transform-origin: center center;
+    -moz-transform: rotate(-8deg) translate( 0, -5%);
+    -moz-transform-origin: center center;
+    -ms-transform: rotate(-8deg) translate( 0, -5%);
+    -ms-transform-origin: center center;
+    -o-transform: rotate(-8deg) translate( 0, -5%);
+    -o-transform-origin: center center;
+    transform: rotate(-8deg) translate( 0, -5%);
+	transform-origin: center center;
+	
+}
+
+.personalPhoto img {
+	width: 100%;
+	border: 6px solid white;
+}
+
+				.effect2
+				{
+				  position: relative;
+				}
+				.effect2:before, .effect2:after
+				{
+				  z-index: -1;
+				  position: absolute;
+				  content: "";
+				  bottom: 15px;
+				  left: 10px;
+				  width: 50%;
+				  top: 80%;
+				  max-width:300px;
+				  background: #777;
+				  -webkit-box-shadow: 0 15px 10px #777;
+				  -moz-box-shadow: 0 15px 10px #777;
+				  box-shadow: 0 15px 10px #777;
+				  -webkit-transform: rotate(-3deg);
+				  -moz-transform: rotate(-3deg);
+				  -o-transform: rotate(-3deg);
+				  -ms-transform: rotate(-3deg);
+				  transform: rotate(-3deg);
+				}
+				.effect2:after
+				{
+				  -webkit-transform: rotate(3deg);
+				  -moz-transform: rotate(3deg);
+				  -o-transform: rotate(3deg);
+				  -ms-transform: rotate(3deg);
+				  transform: rotate(3deg);
+				  right: 10px;
+				  left: auto;
+				}
+
+.contactInfo ul {
+	position: relative;
+	padding-bottom: 30pt;
+}
+	
+	div.landscape .contactInfo ul {
+		padding-bottom: 10pt;
+	}
+	
+.contactInfo ul li {
+	margin-bottom: 5pt;
+	word-break: keep-all;
+	padding-left: 5pt;
+}
+
+.contactInfo ul h1 {
+	color: white;
+	margin: 0 5pt 15pt 5pt;
+}
+
+	div.landscape .contactInfo ul h1 {
+		margin: 0 5pt 7pt 5pt;
+	}
+
+.contactInfo ul  li.myaddress:before {
+	content: '\261B  ';
+}
+
+.contactInfo ul  li.myemail:before {
+	content: '\2709  ';
+}
+
+.contactInfo ul  li.myphone:before {
+	content: '\260E  ';
+}
+
+/* main */
+main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 50pt;
+}
+
+main .mainWrapper {
+	position: relative;
+	float: right;
+	margin-right: 5mm;
+	width: calc(100% - 68mm);
+}
+
+		div.portrait main .mainWrapper {
+			width: calc(75% - 15mm);
+		}
+
+		div.landscape main .mainWrapper {
+			width: calc(80% - 17mm);
+		}
+		
+		div.clonedPage .noAside .mainWrapper {
+			display: block;
+			float: none;
+			width: 100%;
+			padding: 50pt 40pt 0;
+		}
+		
+main section {
+	width: 100%;
+	padding: 4pt 0;
+}
+
+main h2 {
+	background: rgb(271,75,0);
+	color: rgb(207,207,207);
+	text-transform: capitalize;
+	font-weight: bolder;
+	padding: 5pt;
+	margin-bottom: 5pt;
+	
+	position: relative;
+	left: -2%;
+	width: 103%;
+}
+
+/* work experience */
+.occupation {
+	float: left;
+	width: 50%;
+	font-weight: bold;
+}
+
+.datesWork {
+	float: right;
+	width: 50%;
+	text-align: right;
+	font-weight: bold;
+}
+
+.employer {
+	font-style: italic;
+}
+
+.description {
+	margin-top: 3pt;
+}
+
+/* education */
+main section.blockedLine {
+	display: inline-block;
+	vertical-align: top;
+}
+	
+div.portrait section.blockedLine {
+	width: 47%;
+	word-wrap: break-word;
+}
+
+div.landscape  section.blockedLine {
+	width: 31%;
+	word-wrap: break-word;
+}
+	
+main .degree {
+	font-weight: bold;
+}
+
+main .datesEdu {
+	font-style: oblique;
+}
+
+/* skills */
+#mySkills li {
+	float: left;
+	margin: 3pt 0;
+}
+
+#mySkills li:after {
+	position: relative;
+	content: '|';
+	padding: 0 7pt;
+	color: #770704;
+	font-weight: 600;
+}
+
+#mySkills li:last-of-type:after {
+	content: '';
+}
+
+
+
+

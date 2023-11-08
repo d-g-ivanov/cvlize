@@ -1,0 +1,252 @@
+#myResume, .clonedPage {
+	font-family: sans-serif;
+}
+
+#formContent form, #personalizeContent .personalizeWrapper {
+	width: 3000px;
+}
+
+#formContent fieldset#myReferencesForm div.cloned {
+	border-top: none;
+}
+
+#formContent fieldset#myReferencesForm button.deleteClone {
+	bottom: -50px;
+}
+
+/*aside*/
+aside {
+	position: relative;
+	width: 100%;
+	height: 30mm;
+}
+
+.nameSection {
+	position: absolute;
+	left: 42pt;
+	bottom: 5pt;
+	width: calc(100% - 45pt);
+}
+
+h1 {
+	width: 100%;
+	font-size: 25pt;
+	color: rgb(98,114,65);
+}
+
+#mySkills {
+	position: absolute;
+	top: 30mm;
+	right: 25pt;
+	background: rgb(218,237,243);
+	z-index: 10;
+	padding: 10pt 5pt;
+	
+	border-top: 1.5mm solid rgb(98,114,65);
+	border-bottom: 1.5mm solid rgb(98,114,65);
+}
+
+		div.portrait #mySkills {
+			width: calc(32% - 25pt);
+		}
+
+		div.landscape #mySkills {
+			width: calc(32% - 25pt);
+		}
+		
+		div.A4.portrait #mySkills {
+			height: calc(297mm - 55mm);
+		}
+		
+			.workArea div.A4.portrait:not(:first-child) #mySkills {
+				height: calc(297mm - 55mm - 1px);
+			}
+
+		div.A4.landscape #mySkills {
+			height: calc(210mm - 55mm);
+		}
+			.workArea div.A4.landscape:not(:first-child) #mySkills {
+				height: calc(210mm - 55mm - 1px);
+			}
+			
+			
+		div.Letter.portrait #mySkills {
+			height: calc(279.4mm - 55mm);
+		}
+
+		div.Letter.landscape #mySkills {
+			height: calc(216mm - 55mm);
+		}
+			
+			.workArea div.Letter.landscape:not(:first-child) #mySkills {
+				height: calc(216mm - 55mm + 1px);
+			}
+			
+		div.Legal.portrait #mySkills {
+			height: calc(355.6mm - 55mm);
+		}
+
+		div.Legal.landscape #mySkills {
+			height: calc(216mm - 55mm);
+		}
+		
+			div.Legal.landscape:not(:first-child) #mySkills {
+				height: calc(216mm - 55mm + 1px);
+			}
+	
+aside ul {
+	padding: 5pt 5pt 10pt;
+}
+
+aside h2 {
+	font-weight: bold;
+	margin: 7pt 0;
+	padding-left: 10pt;
+	border-left: 3px solid rgb(98,114,65);
+	
+	position: relative;
+	left: - 5pt;
+}
+
+aside h3 {
+	font-weight: 600;
+	opacity: 0.8;
+	margin-bottom: 2pt;
+}
+
+aside li {
+	font-size: 11pt;
+}
+
+aside li:before {
+	content: '\2022  ';
+	height: 100%;
+	color: rgb(98,114,65);
+}
+
+/*main*/
+
+main {
+	position: relative;
+	width: 100%;
+	height: calc(100% - 30mm);
+	padding-left: 40pt;
+	padding-right: 25pt;
+	padding-bottom: 25mm;
+}
+
+main .mainWrapper {
+	width: calc(68% + 5pt);
+	height: 100%;
+	
+	border-top: 1.5mm solid rgb(98,114,65);
+	border-bottom: 1.5mm solid rgb(98,114,65);
+}
+
+main section.headline {
+	width: 100%;
+	padding: 10pt 5pt 10pt 0;
+}
+
+	main section.headline:not(:first-child) {
+		border-top: 1.5mm solid rgb(98,114,65);
+	}
+
+	main section#personalInfo, main section#mySites {
+		border-top: none;
+	}
+
+main section h2 {
+	font-weight: bold;
+	font-size: 13pt;
+	padding-left: 10pt;
+	border-left: 3px solid rgb(98,114,65);
+}
+
+/* contact info */
+.mySites {
+	margin-bottom: 5pt;	
+}
+
+.contactInfo li:before {
+	content: '\2022  ';
+	height: 100%;
+	color: rgb(98,114,65);
+}
+
+/*education*/
+
+section.myLearning {
+	margin: 0 5pt 8pt 0;
+}
+
+.degree {
+	font-weight: bold;
+	width: 60%;
+}
+
+.datesEdu {
+	float: right;
+	text-align: right;
+	width: 35%;
+}
+
+.datesEdu:before, .datesEdu:after {
+	clear: both;
+}
+
+/*work*/
+section.myExperience {
+	margin: 0 5pt 8pt 0;
+	position: relative;
+}
+
+section.myExperience > div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+section.myExperience > div:first-child {
+	width: 35%;
+	margin-right: 4%;
+}
+
+section.myExperience > div:nth-child(2) {
+	width: 60%;
+}
+
+.occupation {
+	font-weight: bold;
+}
+
+.datesWork {
+	font-style: oblique;
+}
+
+.employer {
+	padding-top: 8pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

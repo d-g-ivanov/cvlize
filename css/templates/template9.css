@@ -1,0 +1,220 @@
+/* 
+	orange rgb(243,156,18)
+	peach rgb(253,240,220)
+	background white
+*/
+
+#formContent form {
+	width: 3500px;
+}
+
+.workArea > div {
+	position: relative;
+	font-family: sans-serif;
+	color: black;
+	font-size: 11pt;
+}
+
+/* aside */
+aside {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.workArea > div aside:nth-of-type(2) {
+	background: rgb(243,156,18);
+	height: 15mm;
+	position: absolute;
+	bottom: 0;
+}
+
+aside > section {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.contactInfo {
+	position: relative;
+	background: rgb(243,156,18);
+}
+
+.contactInfo ul {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	padding: 30pt 0 10pt;
+	text-align: center;
+}
+
+.contactInfo li {
+	color: white;
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+	font-size: 13pt;
+}
+		
+.nameSection {
+	width: 100%;
+	text-align: center;
+	padding: 20pt 0;
+}
+
+.nameSection h1 {
+	font-size: 25pt;
+	font-weight: bold;
+}
+
+.nameSection p {
+	font-size: 13pt;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.nameSection p:before, .nameSection p:after {
+	content: '';
+	display: inline-block;
+	width: 8pt;
+	height: 8pt;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	background-color: rgb(243,156,18);
+	margin: 0 5pt;
+}
+
+
+/* main */
+main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 20mm;
+}
+
+.clonedPage main.noAside {
+	padding-top: 15mm;
+}
+
+main section.headline {
+	width: 95%;
+	font-size: 15pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 2mm 0 1mm 10mm;
+	border-bottom: 2px solid rgb(243,156,18);
+	border-left: 8mm solid rgb(243,156,18);
+}
+
+.mainWrapper > section:not(.headline) {
+	width: 95%;
+	padding: 3mm 0 3mm 13mm;
+}
+
+/* skills */
+.sentOne {
+	color: rgb(243,156,18);
+}
+
+h5 {
+	font-weight: bold;
+}
+
+#mySkills li:not(.skillSection):before, #myOthers li:before {
+	content: '\2022';
+	display: inline-block;
+	color: black;
+	margin-right: 3pt;
+}
+
+.skillSection {
+	margin-bottom: 2mm;
+}
+
+/* education */
+
+main .myLearning {
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+div.portrait .myLearning {
+	width: calc( (100% - 13mm)/2 );
+	word-wrap: break-word;
+}
+
+div.landscape .myLearning {
+	width: calc( (100% - 13mm)/3 );
+	word-wrap: break-word;
+}
+
+.degree, .datesEdu, .occupation {
+	font-weight: bold;
+}
+
+.datesEdu, .myExperience .description {
+	font-style: oblique;
+}
+
+/* */
+.joined {
+	position: relative;
+}
+
+.joined:before {
+	content: '';
+	display: block;
+	width: 2px;
+	background: rgb(243,156,18);
+	position: absolute;
+	top: calc(15pt + 11mm);
+	bottom: 0;
+	right: 48%;
+}
+
+#forOthers, #forWork {
+	position: relative;
+	border: none;
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#forOthers h2, #forWork h2 {
+	font-size: 15pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5mm 0 5mm 5mm;
+}
+
+main .myExperience {
+	width: 96%;
+	padding-left: 4%;
+	margin-bottom: 5mm;
+}
+
+main .myExperience:last-of-type {
+	margin-bottom: 0;
+}
+
+#myOthers {
+	width: 96%;
+	padding-right: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,160 @@
+/* aside */
+aside {
+	position: relative;
+	width: 100%;
+	background: #91c3aa;
+	padding: 30px 30px 30px 55px;
+	border-bottom: 10px solid #acedcd;
+	color: #acedcd;
+}
+
+.workArea > div > aside:nth-of-type(2) {
+	position: absolute;
+	bottom: 0;
+	border: none;
+	height: 20px;
+	padding: 0;
+}
+
+aside > section {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}
+
+aside h1 {
+	font-size: 70px;
+}
+
+aside p {
+	border-top: 3px solid #acedcd;
+	border-bottom: 3px solid #acedcd;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+aside > section:first-child {
+	width: calc(100% - 260px);
+}
+
+aside > section:nth-child(2) {
+	width: 250px;
+}
+
+aside > section:nth-child(2) div {
+	margin: 0 auto;
+	position: relative;
+	width:200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow:hidden;
+}
+
+aside img {
+	width: 100%;
+	height: 100%;
+}
+
+/*main*/
+main {
+	position: relative;
+	width: 100%;
+	padding: 30px 55px 45px;
+	color: #333;
+	font-size: 12pt;
+}
+
+main > .mainWrapper > section {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+/* section general */
+#general > div {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 4%;
+}
+
+#general > div:last-child {
+	margin-right: 0;
+}
+
+main h2 {
+	width: 100%;
+	font-size: 25px;
+	margin-bottom: 15px;
+	color: #5ba480;
+}
+main .headline h2 {
+	margin-bottom: 0;
+}
+
+.myLearning {
+	margin-bottom: 15px;
+}
+
+main ul li {
+	margin-bottom: 5px;
+}
+
+main ul li:last-child {
+	margin-bottom: 0;
+}
+
+li:before {
+	margin-right: 15px;
+}
+
+li.myaddress:before { 
+	content:'\261B';
+}
+
+li.myemail:before {
+	content:'\2709';
+}
+
+li.myphone:before {
+	content:'\260E';
+}
+
+li.mysite:before {
+	content:'\2699';
+}
+
+/* work */
+section.myExperience {
+	width: 47%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2%;
+}
+
+main section.myExperience:nth-of-type(2n+1) {
+	margin-right: 0;
+}
+
+.myExperience .description {
+	margin-top: 10px;
+}
+
+.employer {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,387 @@
+* {
+  
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+.cf {
+	clear: both;
+}
+	
+body {
+	background: #6C6C6C/*rgb(204,204,204) #6C6C6C*/;
+	font-size: 12pt;
+}
+
+main {
+	display: block; /* for IE support*/
+}
+
+::selection {
+background:#F0D494;
+color:white;
+}
+
+::-moz-selection {
+background:#F0D494;
+color:#8C8C8C;
+}
+
+::-webkit-selection {
+background:#F0D494;
+color:#8C8C8C;
+}
+
+/* Workarea/resume basic formatting */
+
+				div.workArea {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 80%;
+					margin: 20px 0;
+				}
+
+				.workArea > div {
+					position: relative;
+					background: rgb(248,248,248);
+					display: block;
+					margin: 30px auto;
+					box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+					
+					overflow: hidden;
+				}
+				
+						div.A4.portrait {
+							width: 210mm;
+							height: 297mm;
+						}
+						
+						div.A4.landscape {
+							width: 297mm;
+							height: 210mm;
+						}
+						
+						div.Letter.portrait {
+							width: 216mm;
+							height: 279.4mm;
+						}
+						
+						div.Letter.landscape {
+							width: 279.4mm;
+							height: 216mm;
+						}
+						
+						div.Legal.portrait {
+							width: 216mm;
+							height: 355.6mm;
+						}
+						
+						div.Legal.landscape {
+							width: 355.6mm;
+							height: 216mm;
+						}
+
+						div.A4.portrait.sortMeFunction, div.A4.landscape.sortMeFunction, div.Letter.portrait.sortMeFunction, div.Letter.landscape.sortMeFunction, div.Legal.portrait.sortMeFunction, div.Legal.landscape.sortMeFunction {
+							height: auto;
+						}
+
+#myResume {
+	display: table;
+}
+
+/* side bar */
+
+aside {
+	position: relative;
+	display: table-cell;
+	float: none;
+	background: rgb(1, 240, 243);
+	color: white;
+}
+
+		div.A4.portrait aside {
+			width: 56.5mm;
+			height: 297mm;
+		}
+		
+			div.A4.portrait main {
+				width: 153.5mm;
+				height: 297mm;
+			}
+
+		div.A4.landscape aside {
+			width: 56mm;
+			height: 210mm;
+		}
+		
+			div.A4.landscape main {
+				width: 240.5mm;
+				height: 210mm;
+			}
+		
+		div.Letter.portrait aside {
+			width: 58mm;
+			height: 279.4mm;
+		}
+
+			div.Letter.portrait main {
+				width: 158mm;
+				height: 279.4mm;
+			}
+		
+		div.Letter.landscape aside {
+			width: 53mm;
+			height: 216mm;
+		}
+		
+			div.Letter.landscape main {
+				width: 226.4mm;
+				height: 216mm;
+			}
+		
+		div.Legal.portrait aside {
+			width: 58mm;
+			height: 355.6mm;
+		}
+		
+			div.Legal.portrait main {
+				width: 158mm;
+				height: 355.6mm;
+			}
+		
+		div.Legal.landscape aside {
+			width: 68mm;
+			height: 216mm;
+		}
+		
+			div.Legal.landscape main {
+				width: 287.6mm;
+				height: 216mm;
+			}
+		
+
+aside section.nameSection h1 {
+	font-size: 67.5pt;
+	position: absolute;
+    top: 15pt;
+    right: 0;
+	width: 230mm;
+	line-height: 0.7;
+	text-align: right;
+	
+	z-index: 1;
+	
+	-webkit-transform: rotate(270deg) translate( 0, -100%);
+    -webkit-transform-origin: right top;
+    -moz-transform: rotate(270deg) translate( 0, -100%);
+    -moz-transform-origin: right top;
+    -ms-transform: rotate(270deg) translate( 0, -100%);
+    -ms-transform-origin: right top;
+    -o-transform: rotate(270deg) translate( 0, -100%);
+    -o-transform-origin: right top;
+    transform: rotate(270deg) translate( 0, -100%);
+    transform-origin: right top;
+	writing-mode: horizontal-tb;
+}
+
+		div.portrait aside section.nameSection h1 {
+			width: 230mm;
+		}
+			div.Legal.portrait aside section.nameSection h1 {
+				width: 280mm;
+			}
+
+		div.landscape aside section.nameSection h1 {
+			width: 160mm;
+		}
+
+	aside h1 span.firstName {
+		text-transform: lowercase;
+		color: rgb(217, 225, 214);
+	}	
+
+	aside h1 span.lastName {
+		font-weight: bolder;
+		text-transform: uppercase;
+	}
+	
+aside section.contactInfo {
+	word-wrap: break-word;
+	position: absolute;
+	bottom: 22.5pt;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 15pt;
+}
+
+		div.portrait section.contactInfo {
+			top: 235mm;
+		}
+			div.Legal.portrait section.contactInfo {
+				top: 285mm;
+			}
+
+		div.landscape section.contactInfo {
+			top: 165mm;
+		}
+
+/* main */
+
+main {
+	display: table-cell;
+	position: relative;
+	height: 100%;
+	color: 	rgb(64,64,64);
+	padding: 15pt;
+	font-size: 12pt;
+}
+
+.clonedPage .noAside {
+	display: block;
+	width: 100%;
+	min-width: 100%;
+}
+
+section#aboutMe {
+	padding-bottom: 12pt;
+}
+
+section.myLearning, section.myExperience {
+	padding: 12pt 0 6pt;
+}
+
+main .headline {
+	width: 100%;
+	padding: 0;
+}
+		
+main h1 {
+	font-weight: bold;
+}
+		
+main h2 {
+	display: inline-block;
+	min-width: 40%;
+	font-size: 15pt;
+	color: white;
+	padding: 3.75pt 3.75pt 3.75pt 15pt;
+	margin: 0 0 0 -15.75pt;
+	background: rgb(1, 240, 243);
+	
+	font-variant: small-caps;
+}
+
+main p {
+	text-align: justify;
+}
+
+main ul li {
+	margin: 12pt 12pt 0 0;
+	text-align: justify;
+}
+
+main ul li:last-child {
+	margin-bottom: 0;
+}
+
+	div.landscape main section#myLearning ul li {
+		margin-bottom: 0;
+	}
+
+main .blockedLine, main .blockedLine li {
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+	div.portrait .myLearning {
+		width: /*48%*/ calc( (100% - 30pt)/2 );
+		margin-left: 15pt;
+		word-wrap: break-word;
+	}
+
+	div.landscape .myLearning {
+		width: calc( (100% - 30pt)/3 );
+		margin-right: 12pt;
+		word-wrap: break-word;
+	}
+	
+		div.portrait .myLearning:nth-child(2n+1) {
+			margin-left: 0;
+		}
+		
+		div.landscape .myLearning:nth-child(4n+1) {
+			margin-right: 0;
+		}
+	
+/* education */
+
+	main .degree {
+		font-weight: bold;
+	}
+
+	main .datesEdu {
+		font-style: oblique;
+	}
+
+	main .description {
+		margin-top: 3.75pt;
+	}
+
+/* work experience */
+	
+	main .occupation {
+		display: inline-block;
+		vertical-align: top;
+		font-weight: bold;
+		width: 50%;
+	}
+	
+	main .datesWork {
+		display: inline-block;
+		vertical-align: top;
+		text-align: right;
+		font-style: oblique;
+		width: 49%;
+	}
+	
+/* skills */
+	#mySkills {
+		margin-bottom: 8px;
+	}
+	
+	main #mySkills li {
+		width: auto;
+	}
+
+	
+	
+	
+	
+	
+	
+/* media queries */						
+@media print {
+	nav {display: none;}
+	
+	div.workArea {
+		margin: 0;
+	}
+	
+	.workArea > div {
+		margin: 0 auto;
+		overflow: visible !important;
+	}
+	
+	#globalTemplating {
+		display: none;
+	}
+}

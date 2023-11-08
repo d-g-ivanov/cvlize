@@ -1,0 +1,153 @@
+/* 
+	blue rgb(8,55,99)
+	grey rgb(155,155,155)
+*/
+
+#formContent form {
+	width: 3000px;
+}
+
+/* aside */
+aside {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: auto;
+	padding-top: 30pt;
+}
+
+aside > section {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+		
+.nameSection {
+	color: rgb(8,55,99);
+	padding-left: 20mm;
+	width: 59%;
+}
+
+.nameSection h1 {
+	font-size: 25pt;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.nameSection p {
+	font-size: 15pt;
+	font-style: oblique;
+	text-transform: uppercase;
+}
+
+.contactInfo {
+	position: relative;
+	width: 40%;
+	padding: 0 10mm;
+}
+
+.contactInfo li {
+	color: rgb(8,55,99);
+}
+
+/* main */
+main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 15mm;
+}
+
+.clonedPage main.noAside {
+	padding-top: 15mm;
+}
+
+main .mainWrapper {
+	width: 100%;
+	overflow: hidden;
+	background: transparent;
+}
+
+main section {
+	padding-right: 10mm;
+	vertical-align: top;
+}
+
+main section:not(.headline) {
+	width: 65%;
+	margin-left: 35%;
+}
+
+main section.headline {
+	width: 35%;
+	display: inline-block;
+	font-size: 15pt;
+	font-style: oblique;
+	color: rgb(8,55,99);
+	
+	padding-right: 5mm;
+	padding-left: 20mm;
+	margin-top: 5mm;
+}
+
+section.headline:before {
+	content: '';
+	display: block;
+	width: 370%;
+	height: 1px;
+	border-top: 2px dotted rgb(8,55,99);
+	margin-bottom: 5pt;
+}
+
+.myExperience, .myLearning, #mySkills, #aboutMe, #myOthers {
+	margin-top: -15pt;
+}
+
+.myExperience:not([style*="display:none"]):not([style*="display: none"]) ~ .myExperience, .myLearning:not([style*="display:none"]):not([style*="display: none"]) ~ .myLearning, .mainWrapper .myLearning:first-child, .mainWrapper .myExperience:first-child {
+	margin-top: 5mm;
+	border-top: 0;
+	padding-top: 0;
+}
+
+.myLearning, #mySkills, #myOthers {
+	position: relative;
+	margin-top: -15pt;
+}
+
+.degree, .occupation, .sentOne, .workArea h5 {
+	color: rgb(8,55,99);
+	font-weight: bold;
+	margin-bottom: 5pt;
+}
+
+.workArea h5 {
+	margin-bottom: 0;
+}
+
+.employer, .institution {
+	color: rgb(155,155,155);
+}
+
+.datesWork, .datesEdu, .occupation, .degree {
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+}
+
+.datesWork, .datesEdu {
+	text-align: right;
+}
+
+#mySkills li {
+	margin: 5pt 0;
+}
+
+#mySkills li:first-child {
+	margin-top: 0;
+}
+
+#myOthers li:before {
+	content: '\2022 ';
+	color: rgb(8,55,99);
+	margin-right: 5pt;
+}

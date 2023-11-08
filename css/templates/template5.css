@@ -1,0 +1,205 @@
+#formContent form, #personalizeContent .personalizeWrapper {
+	width: 3000px;
+}
+
+#formContent fieldset#myKeyCompetencesForm div.cloned {
+	border-top: none;
+}
+
+#formContent fieldset#myKeyCompetencesForm button.deleteClone {
+	bottom: -50px;
+}
+
+.workArea {
+	font-family: sans-serif;
+}
+
+/* aside */
+aside {
+	position: relative;
+	top: 0;
+	width: 100%;
+	background: rgb(230,230,230);
+}
+
+	div.A4.portrait aside {
+			min-height: 59.3mm;
+		}
+
+		div.A4.landscape aside {
+			min-height: 42mm;
+		}
+		
+		div.Letter.portrait aside {
+			min-height: 55.8mm;
+		}
+
+		div.Letter.landscape aside {
+			min-height: 43.3mm;
+		}
+		
+		div.Legal.portrait aside {
+			min-height: 71.1mm;
+		}
+
+		div.Legal.landscape aside {
+			min-height: 43.2mm;
+		}
+
+.section1 {
+	position: relative;
+	width: 100%;
+	background: black;
+	color: white;
+	padding: 30pt 0 15pt;
+}
+
+.section1 section, .section2 section, main section li > div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nameSection {
+	width: 65%;
+	padding-left: 50pt;
+}
+
+.nameSection span {
+	display: block;
+	width: 100%;
+	font-size: 25pt;
+	font-weight: bold;
+}
+
+.contactInfo {
+	width: 34%;
+	padding-right: 20pt;
+}
+
+.contactInfo ul  li.myaddress:before {
+	content: '\2297  ';
+}
+
+.contactInfo ul  li.myemail:before {
+	content: '\2709  ';
+}
+
+.contactInfo ul  li.myphone:before {
+	content: '\260E  ';
+}
+
+.contactInfo ul  li.mysite:before {
+	content: '\21DD  ';
+}
+
+.section2 {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 0 50pt;
+}
+
+.section2:after {
+	content: '';
+	width: 1px;
+	height: 95%;
+	background: black;
+	position: absolute;
+	top: 6pt;
+	bottom: 6pt;
+	right: 65%;
+}
+
+#keyCompetences {
+	width: 30%;
+	padding: 6pt 0;
+	color: #888;
+	margin-right: 4%;
+}
+
+#aboutMe {
+	width: 65%;
+	color: #888;
+	padding: 6pt 0;
+	font-style: italic;
+	text-align: center;
+}
+
+#aboutMe h1, #keyCompetences h1 {
+	padding-bottom: 10pt;
+	color: black;
+	font-size: 13.5pt;
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* main */
+main {
+	position: relative;
+	width: 100%;
+	padding: 10pt 50pt 40pt;
+}
+
+main section {
+	width: 100%;
+	margin: 15pt 0;
+}
+
+main section.headline {
+	margin-top: 0;
+}
+
+main h2 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: bolder;
+	margin-bottom: 10pt;
+}
+
+main section > div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+main section > div:nth-of-type(odd) {
+	width:30%;
+}
+
+main section > div:nth-of-type(even) {
+	width: 69%;
+}
+
+.datesWork, .datesEdu {
+	color: #888;
+}
+
+.employer, .institution {
+	color: #888;
+	font-style: oblique;
+}
+
+.occupation, .degree {
+	font-weight: bold;
+}
+
+.description {
+	margin-top: 10pt;
+}
+
+#mySkills ul {
+	width: 100%;
+}
+
+#mySkills ul li:before, #keyCompetences li:before {
+	content: '\2022  ';
+	color: black;
+}
+
+
+
+
+
+
+
+
+
