@@ -20,3 +20,6 @@
 ## About The Repo
 
 Project was created back in 2016 as a means to learn. Uploaded now as part of a portfolio.
+<br />
+<br />
+<a target="_blank" href="https://d-g-ivanov.github.io/cvlize/">See the GitHub Pages site</a>
